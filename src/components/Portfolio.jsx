@@ -15,14 +15,14 @@ export default function Portfolio() {
     <section id="portfolio" className="py-20 bg-black relative">
       <div className="absolute top-20 left-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fadeInUp">
           <h2 className="text-6xl font-black text-white mb-4">OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">PORTFOLIO</span></h2>
           <p className="text-xl text-gray-400">Stunning projects that deliver results</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div key={index} className="group cursor-pointer relative overflow-hidden rounded-2xl transform hover:scale-105 transition shadow-2xl shadow-black/50">
+            <div key={index} className="group cursor-pointer relative overflow-hidden rounded-2xl transform hover:scale-105 transition shadow-2xl shadow-black/50 animate-scaleIn" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="relative h-80 overflow-hidden">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-2 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition"></div>

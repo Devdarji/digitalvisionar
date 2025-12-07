@@ -14,14 +14,14 @@ export default function Services() {
     <section id="services" className="py-20 bg-black relative">
       <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fadeInUp">
           <h2 className="text-6xl font-black text-white mb-4">OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">SERVICES</span></h2>
           <p className="text-xl text-gray-400">Comprehensive solutions for your digital needs</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800 hover:border-emerald-500 transition transform hover:scale-105">
+            <div key={index} className="group relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800 hover:border-emerald-500 transition transform hover:scale-105 animate-fadeInUp" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="relative h-48 overflow-hidden">
                 <img src={service.img} alt={service.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
