@@ -39,7 +39,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-white mb-2 text-xl">Address</h3>
-                <p className="text-gray-400">123 Tech Street, Digital City, 12345</p>
+                <p className="text-gray-400">Arved transcube plaza, 6, Bandhu Nagar, Vijay Nagar, Ranip, Ahmedabad, Gujarat 382480</p>
               </div>
             </div>
             <div className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-emerald-500 transition transform hover:scale-105">
@@ -50,7 +50,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-white mb-2 text-xl">Email</h3>
-                <p className="text-emerald-500">info@digitalvisionar.com</p>
+                <p className="text-emerald-500">withdigitalvisionar@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-emerald-500 transition transform hover:scale-105">
@@ -61,7 +61,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-white mb-2 text-xl">Phone</h3>
-                <p className="text-emerald-500">+91 91045 96435</p>
+                <a href="tel:+919104596435" className="text-emerald-500 hover:text-emerald-400 transition">+91 91045 96435</a>
               </div>
             </div>
           </div>
